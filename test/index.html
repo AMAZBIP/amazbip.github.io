@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>Amazfit Watch Faces</title>
     <meta name="description" content="Amazfit Watch Faces">
@@ -18,24 +18,21 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen"/>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<link rel="stylesheet" href="css/style.css?1503850524">
+	<link rel="stylesheet" href="css/style.css?1503850524"/>
+	<link rel="stylesheet" href="css/flat-ui.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="js/modernizr.custom.js"></script>
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/common.js?1495035334"></script>
     <script src="js/flat-ui.min.js"></script>
     <script src="js/typeahead.bundle.min.js"></script>
-
-   
- 
-
 </head>
  <body style='background:#121314;color: rgba(255, 255, 255, 0.8);'>
- <br>
 <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -45,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.html"><img src='images/logo.png' style='width:200px;margin-top:10px'></a>
+          <a href="http://amazfitwatchfaces.com/"><img src='images/logo.png' style='width:200px;margin-top:10px'></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -67,7 +64,7 @@
         <div class="col-md-4">
             <div class="watchface">
                 <div class="watchface-img-bg center-block">
-                    <img class="watchface-img" id="watchface-preview" src="https://www.iweloop.com/images/black.png" />
+                    <img class="watchface-img" id="watchface-preview" src="images/black.png" />
                 </div>
                 <p class="watchface-name">Name:<span id="watchface_name_view"></span></p>
                 <p class="watchface-maker">Author:<span id="watchface_makername_view"></span></p>
@@ -92,7 +89,7 @@
             <div class="form-inline">
                 <div class="tagsinput-primary input-group" >
                     <span class="input-group-addon">Tag</span>
-                    <input name="tagsinput" class="tagsinput" data-role="tagsinput" id="watch-face-tags" value="小黑3" />
+                    <input name="tagsinput" class="tagsinput" data-role="tagsinput" id="watch-face-tags" value="Bip" />
                 </div>
                 <label class="form-label label label-warning">Commonly used tags: Digital, Russian</label>
             </div>
@@ -157,7 +154,7 @@
         formData.append("pic-2",$('#pic-2').val());
         formData.append("pic-3",$('#pic-3').val());
         $.ajax({
-            url :  "https://www.iweloop.com/api/uploadWatchface",
+            url :  "http://amazfitwatchfaces.com/watch/",
             type : 'POST',
             data : formData,
             processData : false,
@@ -167,16 +164,16 @@
                     $('#result_display').html("<p>表盘上传成功，正在跳转。。。</p>");
                     $('#result_display').attr("class","alert alert-success");
                     $('#result_display').show();
-                    setTimeout(function(){window.location="https://www.iweloop.com/watchface/view/id/" + responseStr.wf_id;},2000);
+                    setTimeout(function(){window.location="http://amazfitwatchfaces.com/watch/id/" + responseStr.wf_id;},2000);
                 }else{
-                    $('#result_display').html("<p>表盘上传失败，原因：" + decodeURIComponent(responseStr.message).replace("BLANK"," ") + "</p>");
+                    $('#result_display').html("<p>Failed to upload：" + decodeURIComponent(responseStr.message).replace("BLANK"," ") + "</p>");
                     $('#result_display').attr("class","alert alert-danger");
                     $('#result_display').show();
                 }
                 $('#upload_button').attr("disabled",false) ;
             },
             error : function() {
-                $('#result_display').html("<p>表盘上传失败，原因：网络传输中断</p>");
+                $('#result_display').html("<p>Failed to upload</p>");
                 $('#result_display').attr("class","alert alert-danger");
                 $('#result_display').show();
                 $('#upload_button').attr("disabled",false) ;
@@ -220,11 +217,6 @@
         <p class="text-muted text-left"></p>
             </div>
 </div>
-
-
-   
-
-
     <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document"  style="width:500px; margin-top:10%;">
             <div class="modal-content">
@@ -292,7 +284,7 @@
     });
     function goSearch(keyword)
     {
-        window.location="https://www.iweloop.com/watchface/search/keyword/" + encodeURIComponent(keyword);
+        window.location="https://ww.com/watchface/search/keyword/" + encodeURIComponent(keyword);
     }
 
 
