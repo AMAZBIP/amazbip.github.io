@@ -1,0 +1,424 @@
+body{
+    background-color: rgb(245,245,245);
+}
+.watchface-row{
+    margin-bottom: 15px;
+    margin-right: -50px;
+    margin-left: -50px;
+}
+.watchface{
+    background-color: #292a2b;
+    border-radius: 6px;
+    padding: 9px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+.watchface-img{
+    height: 165px;
+    margin-top: 70px;
+    margin-left: 0px;
+    width: 165px;
+}
+
+.watchface-img-bg{
+    height: 328px;
+    margin-top: 10px;
+    width: 265px;
+    background: url(../images/watchface_bg.jpg) no-repeat;
+    margin-bottom: 10px;
+}
+.watchface-laud-like-row{
+    margin-bottom: 10px;
+}
+.watchface-maker{
+    padding: 0;
+    margin: 0;
+}
+.watchface-name{
+    padding: 0;
+    margin: 0;
+}
+.watchface-version{
+    margin-top:10px;
+}
+.watchface-version-text-heading{
+    font-family: Microsoft YaHei;
+    font-size: 20px;
+}
+.watchface-version-text{
+    font-family: Microsoft YaHei;
+}
+.watchface-list-laud-like{
+    padding: 0;
+    margin: 0;
+}
+.watchface-list-view-download{
+    padding: 0;
+    margin: 0;
+}
+.watchface-pay-icon{
+    position: absolute;
+    right: 5%;
+    top: 5px;
+    font-family: Microsoft YaHei;
+    font-size: 22px;
+}
+.row {
+
+}
+.watchface-list-row{
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 9px;
+
+}
+.watchface-list-watchface{
+    text-align: center;
+    position: relative;
+}
+.watchface-list-img{
+    height: 230px;
+    width: 176px;
+    text-align: center;
+    position: relative;
+}
+.watchface-list-text{
+    font-family: Microsoft YaHei;
+    text-align: center;
+    margin-top: 70px;
+}
+.watchface-list-button{
+    margin-top: 10px;
+    text-align:center;
+}
+.watchface-upload {
+    padding-bottom: 15px;
+}
+.watchface-upload-tags-row {
+    margin-right: 0px;
+    margin-left: 50px;
+}
+.watchface-tags{
+    margin-right: 5px;
+}
+.input-area{
+    padding-bottom: 10px;
+}
+.describe-header{
+    margin-top: 0px;
+}
+.describe-text{
+    font-family: Microsoft YaHei;
+    font-size: 24px;
+    background-color: white;
+    color: #269abc;
+
+}
+.describe-pic{
+    background-color: #a6e1ec;
+}
+.describe-money{
+    font-family: Microsoft YaHei;
+    font-size: 40px;
+    margin-top: -20px;
+    margin-bottom: -13px;
+}
+.col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.typeahead {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.tags-container{
+    background-color: white;
+    font-family: Microsoft YaHei;
+    font-size: 16px;
+    margin-top: -14px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+
+
+}
+.tags-badge{
+    margin-top: -3px;
+}
+.watchface-version-item-preview{
+
+}
+.watchface-version-tooltip{
+    min-width: 198px;
+}
+.watchface-small-list{
+    margin:0 auto;
+    text-align: center;
+    font-size:8px;
+
+}
+.watchface-small {
+    padding:0.5em;
+    padding-bottom: 0.3em;
+    padding-top:1.5em;
+    margin:1em;
+    border-radius:0.375em;
+    background-color: #626262;
+    display: inline-block;
+    width:13em;
+    position:relative;
+    box-shadow: 0 0 10px 3px #626262;
+    transition-duration: 0.2s;
+    transition-property: background-color,box-shadow;
+
+}
+.watchface-small:hover {
+    background-color:royalblue;
+    box-shadow: 0 0 20px 5px darkslateblue;
+
+}
+.watchface-small>span:nth-child(1){
+    display: block;
+    position: absolute;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 8px 0;
+    margin: 0;
+    color:white;
+    top:50px;
+    right:-0.8em;
+    text-align: center;
+    line-height: 1em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #626262;
+    font-size:1.2em;
+    width:1em;
+    font-weight: bold;
+    z-index: -1;
+
+}
+.watchface-small>span:nth-child(2){
+    display: block;
+    position: absolute;
+    text-align: left;
+    color:white;
+    top:0;
+    left:0;
+    border-radius: 10px;
+    background-color: indianred;
+    font-size:1em;
+    font-weight: bold;
+    margin-left:-2px;
+    margin-top:-2px;
+
+}
+.watchface-small>span:nth-child(3){
+    display: block;
+    position: absolute;
+    text-align: right;
+    color:white;
+    top:0;
+    right:0;
+    border-radius: 10px;
+    background-color: cadetblue;
+    font-size:1em;
+    margin-right:-2px;
+    margin-top:-2px;
+
+
+}
+.watchface-small>img{
+    padding:0;
+    width:11em;
+    height:11em;
+    margin:auto;
+    border-top-left-radius: 0.375em;
+    border-top-right-radius: 0.375em;
+
+}
+.watchface-small>a:nth-of-type(1){
+    width: 11em;
+    display: block;
+    background-color:grey;
+    color: whitesmoke;
+    margin:auto;
+    text-align: center;
+    font-size: 1em;
+    border-bottom-left-radius: 0.375em;
+    border-bottom-right-radius: 0.375em;
+    text-decoration: solid underline;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+    position:relative;
+}
+.watchface-small>a:nth-of-type(1):hover{
+    background-color:darkkhaki;
+}
+.watchface-small>a:nth-of-type(1) > span{
+    margin:0;
+    padding:0;
+    display: inline-block;
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.watchface-small-vote{
+
+    padding-top:3px;
+    display: block;
+
+}
+.watchface-small-vote>p:nth-of-type(1){
+    color: antiquewhite;
+    display: inline-block;
+    text-align: left;
+    font-size: 0.9em;
+    float:left;
+    padding:0;
+    margin:0;
+    margin-top:3px;
+    border-top-left-radius: 0.375em;
+    border-top-right-radius: 0.375em;
+    max-width: 60%;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.watchface-small-vote>.btn{
+
+    float:right;
+    font-size:1em;
+
+}
+.watchface-select-vote-panel{
+    max-height:500px;
+    overflow:auto;
+}
+.watchface-select-vote-list-item{
+    position:relative;
+}
+.watchface-select-vote-list-item > label{
+    display: inline-block;
+    position:absolute;
+    right:15px;
+    top:10%;
+    padding: 0;
+    margin: 0;
+    width:20px;
+}
+.watchface-select-vote-list-item > label > input{
+
+}
+.watchface-vote-info >button{
+    margin-left:300px;
+    margin-top:10px;
+}
+.info-input  span{
+    display: inline-block;
+    width:120px;
+}
+.info-input  input{
+    display: inline-block;
+    max-width: 300px;
+}
+.vote-tip {
+    padding: 3px;
+    margin:0;
+    background-color: darkslateblue;
+    color:whitesmoke;
+    border-radius: 2px;
+    font-size:14px;
+
+
+}
+.banner-right-div {
+    position:fixed;
+    right:20px;
+    top:80px;
+    height:80%;
+}
+.vote-rule {
+    position:fixed;
+    left:20px;
+    top:80px;
+    width:10%;
+}
+.banner-right{
+    height: 100%;
+    border-radius: 0.375em;
+}
+.banner-left{
+    height: 100%;
+    border-radius: 0.375em;
+    border-style: solid;
+    border-width: 1px;
+    border-color:yellowgreen;
+}
+.banner-left-div {
+    position:fixed;
+    left:20px;
+    bottom:80px;
+    height:256px;
+}
+.banner-right-div > a:nth-of-type(1) {
+    display:block;
+    position:absolute;
+    left:13.5%;
+    top:43%;
+    height:5.3%;
+    width:80%;
+
+}
+.banner-right-div > a:nth-of-type(2) {
+    display:block;
+    position:absolute;
+    left:13.5%;
+    top:51%;
+    height:5.3%;
+    width:80%;
+
+}
+.banner-right-small{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    height:64px;
+    width:64px;
+}
+.banner-right-small img{
+    border-radius: 10px;
+    height:100%;
+}
+.banner-left-small{
+    position:fixed;
+    left:20px;
+    top:80%;
+    height:64px;
+    width:64px;
+}
+.banner-left-small img{
+    border-radius: 10px;
+    height:100%;
+}
+.container{
+    position:relative;
+}
+@keyframes small-hover {
+    to {
+        background: royalblue;
+    }
+}
+@keyframes small-unhover {
+
+    to {
+        background: darkslateblue;
+    }
+}
