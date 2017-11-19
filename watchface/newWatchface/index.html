@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Mirrored from www.iweloop.com/watchface/newWatchface/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 10:55:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0">
+    <meta itemprop="name" content="最新表盘 - 小黑3 Hey 3S 表盘分享平台"/>
+        <meta name="keywords" content="小黑3,Hey 3S,小黑三,表盘,表盘下载,唯乐,weloop,小黑3表盘"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/flat-ui.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://www.iweloop.com/js/html5shiv.min.js"></script>
+    <script src="https://www.iweloop.com/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- <style>
+        h1,h3,h4,textarea,button,a {
+            font-family: Microsoft YaHei;
+        }
+    </style> -->
+
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/commonee4c.js?1495035334"></script>
+    <!--<script src="https://www.iweloop.com/js/bootstrap.min.js"></script>-->
+    <script src="../../js/flat-ui.min.js"></script>
+    <script src="../../js/typeahead.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/style83c0.css?1503850524">
+    <title>最新表盘 - 小黑3 Hey 3S表盘分享平台</title>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "../../../hm.baidu.com/hm52bd.js?4910b78ce4b5c0a3c050abee2f421570";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+            <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">表盘分享平台</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-01">
+        <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">最新表盘</a></li>
+            <li  ><a href="../hotWatchface/index.html">最热表盘</a></li>
+            <li  ><a href="../upLoad/index.html">上传表盘</a></li>
+            <li  ><a href="../favouriteWatchface/index.html">我的收藏</a></li>
+            <li  ><a href="../../user/listWatchface/index.html">管理表盘</a></li>
+            <li  ><a href="../../user/generateGif/index.html">制作GIF预览图</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">制作工具 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://bbs.weloop.cn/thread-18596-1-1.html" target="_blank">唯乐官方工具</a></li>
+                    <li><a href="http://bbs.weloop.cn/thread-18432-1-1.html" target="_blank">小黑表盘大师 @reerayxia</a></li>
+                    <li><a href="http://bbs.weloop.cn/thread-18336-1-1.html" target="_blank">XH3表盘设计器 @wonderfarm</a></li>
+                    <li><a href="http://bbs.weloop.cn/thread-18310-1-5.html" target="_blank">小黑3表盘设计工具 @copiwl</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <div class="form-group navbar-form">
+                    <div class="input-group">
+                        <input class="form-control"  type="search" name="keyword" id="keyword" placeholder="表盘名称或作者......">
+                            <span class="input-group-btn">
+                                <button  class="btn" onclick="goSearch($('#keyword').val());"><span class="fui-search"></span></button>
+                            </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                                    <div class="navbar-form"><button class="btn btn-sm" onclick='(function(){window.location="http://encuss.yxz.me/userAPI/loginFromQQ/site_id/2/viewing/" + encodeURIComponent("../../user/loginFromEncuss/viewing/https_/www.iweloop.com/watchface/newWatchface/index.html")})()'>立即登录</button>
+                    </div>
+                                    </li>
+        </ul>
+
+    </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->
+<div class="container" id="watchface_list">
+    <div class="row watchface-row"><div class="col-md-3">
+                <div class="watchface"><div class="watchface-pay-icon"><span class="glyphicon glyphicon-yen label label-success">付费</span></div>
+                    <div class="watchface-img-bg center-block">
+                        <img class="watchface-img" src="../../resource/watchface/img/1285d41d8cd9.gif" />
+                    </div>
+                    <div class="watchface-laud-like-row">
+                        <button class="btn btn-success btn-sm laud-button" data-wf-id="1285" onclick="laudWatchface(this)"><span class="glyphicon glyphicon-thumbs-up"></span> 3</button>
+                        <button class="btn btn-success btn-sm like-button" data-wf-id="1285" onclick="likeWatchface(this)"><span class="glyphicon glyphicon-heart"></span> 1</button>
+                    </div>
+                    <p class="watchface-name">名称:口袋妖怪新版</p>
+                    <p class="watchface-maker">作者:foreveryp</p>
+                    <a class="btn btn-primary btn-large btn-block" target="_blank" href="../view/id/1285.html">查看详情</a>
+                </div>
+            </div><div class="col-md-3">
+                <div class="watchface">
+                    <div class="watchface-img-bg center-block">
+                        <img class="watchface-img" src="../../resource/watchface/img/1182d41d8cd91510460828.gif" />
+                    </div>
+                    <div class="watchface-laud-like-row">
+                        <button class="btn btn-success btn-sm laud-button" data-wf-id="1182" onclick="laudWatchface(this)"><span class="glyphicon glyphicon-thumbs-up"></span> 64</button>
+                        <button class="btn btn-success btn-sm like-button" data-wf-id="1182" onclick="likeWatchface(this)"><span class="glyphicon glyphicon-heart"></span> 13</button>
+                    </div>
+                    <p class="watchface-name">名称:免费合集</p>
+                    <p class="watchface-maker">作者:StarRiver</p>
+                    <a class="btn btn-primary btn-large btn-block" target="_blank" href="../view/id/1182.html">查看详情</a>
+                </div>
+            </div><div class="col-md-3">
+                <div class="watchface">
+                    <div class="watchface-img-bg center-block">
+                        <img class="watchface-img" src="../../resource/watchface/img/1174d41d8cd91510412407.gif" />
+                    </div>
+                    <div class="watchface-laud-like-row">
+                        <button class="btn btn-success btn-sm laud-button" data-wf-id="1174" onclick="laudWatchface(this)"><span class="glyphicon glyphicon-thumbs-up"></span> 118</button>
+                        <button class="btn btn-success btn-sm like-button" data-wf-id="1174" onclick="likeWatchface(this)"><span class="glyphicon glyphicon-heart"></span> 25</button>
+                    </div>
+                    <p class="watchface-name">名称:简约指针</p>
+                    <p class="watchface-maker">作者:阿荣</p>
+                    <a class="btn btn-primary btn-large btn-block" target="_blank" href="../view/id/1174.html">查看详情</a>
+                </div>
+            </div><div class="col-md-3">
+                <div class="watchface">
+                    <div class="watchface-img-bg center-block">
+                        <img class="watchface-img" src="../../resource/watchface/img/1284d4f43c94.gif" />
+                    </div>
+                    <div class="watchface-laud-like-row">
+                        <button class="btn btn-success btn-sm laud-button" data-wf-id="1284" onclick="laudWatchface(this)"><span class="glyphicon glyphicon-thumbs-up"></span> 13</button>
+                        <button class="btn btn-success btn-sm like-button" data-wf-id="1284" onclick="likeWatchface(this)"><span class="glyphicon glyphicon-heart"></span> 2</button>
+                    </div>
+                    <p class="watchface-name">名称:《红，蓝，黄的构图》</p>
+                    <p class="watchface-maker">作者:黑光教主</p>
+                    <a class="btn btn-primary btn-large btn-block" target="_blank" href="../view/id/1284.html">查看详情</a>
+                </div>
+            </div></div><div class="row watchface-row"><div class="col-md-3">
+                <div class="watchface"><div class="watchface-pay-icon"><span class="glyphicon glyphicon-yen label label-success">付费</span></div>
+                    <div class="watchface-img-bg center-block">
+                        <img class="watchface-img" src="../../resource/watchface/img/1283d41d8cd9.gif" />
+                    </div>
+                    <div class="watchface-laud-like-row">
+                        <button class="btn btn-success btn-sm laud-button" data-wf-id="1283" onclick="laudWatchface(this)"><span class="glyphicon glyphicon-thumbs-up"></span> 5</button>
+                        <button class="btn btn-success btn-sm like-button" data-wf-id="1283" onclick="likeWatchface(this)"><span class="glyphicon glyphicon-heart"></span> 0</button>
+                    </div>
+                    <p class="watchface-name">名称:简单64</p>
+                    <p class="watchface-maker">作者:etspy</p>
+                    <a class="btn btn-primary btn-large btn-block" target="_blank" href="../view/id/1283.html">查看详情</a>
+                </div>
+            </div><div class="col-md-3">
+                <div class="watchface">
+                    <div class="watchface-img-bg center-block">
+                        <img class="watchface-img" src="../../resource/watchface/img/1080d41d8cd91509920362.gif" />
+                    </div>
+                    <div class="watchface-laud-like-row">
+                        <button class="btn btn-success btn-sm laud-button" data-wf-id="1080" onclick="laudWatchface(this)"><span class="glyphicon glyphicon-thumbs-up"></span> 61</button>
+                        <button class="btn btn-success btn-sm like-button" data-wf-id="1080" onclick="likeWatchface(this)"><span class="glyphicon glyphicon-heart"></span> 11</button>
+                    </div>
+                    <p class="watchface-name">名称:B1W</p>
+                    <p class="watchface-maker">作者:黑光教主</p>
+                    <a class="btn btn-primary btn-large btn-block" target="_blank" href="../view/id/1080.html">查看详情</a>
+                </div>
+            </div><div class="col-md-3">
+                <div class="watchface">
+                    <div class="watchface-img-bg center-block">
+                        <img class="watchface-img" src="../../resource/watchface/img/1280d41d8cd91509673034.png" />
+                    </div>
+                    <div class="watchface-laud-like-row">
+                        <button class="btn btn-success btn-sm laud-button" data-wf-id="1280" onclick="laudWatchface(this)"><span class="glyphicon glyphicon-thumbs-up"></span> 11</button>
+                        <button class="btn btn-success btn-sm like-button" data-wf-id="1280" onclick="likeWatchface(this)"><span class="glyphicon glyphicon-heart"></span> 2</button>
+                    </div>
+                    <p class="watchface-name">名称:鱼</p>
+                    <p class="watchface-maker">作者:Sonny</p>
+                    <a class="btn btn-primary btn-large btn-block" target="_blank" href="../view/id/1280.html">查看详情</a>
+                </div>
+            </div><div class="col-md-3">
+                <div class="watchface"><div class="watchface-pay-icon"><span class="glyphicon glyphicon-yen label label-success">付费</span></div>
+                    <div class="watchface-img-bg center-block">
+                        <img class="watchface-img" src="../../resource/watchface/img/1282d41d8cd9.gif" />
+                    </div>
+                    <div class="watchface-laud-like-row">
+                        <button class="btn btn-success btn-sm laud-button" data-wf-id="1282" onclick="laudWatchface(this)"><span class="glyphicon glyphicon-thumbs-up"></span> 0</button>
+                        <button class="btn btn-success btn-sm like-button" data-wf-id="1282" onclick="likeWatchface(this)"><span class="glyphicon glyphicon-heart"></span> 0</button>
+                    </div>
+                    <p class="watchface-name">名称:SuperM</p>
+                    <p class="watchface-maker">作者:Oliver</p>
+                    <a class="btn btn-primary btn-large btn-block" target="_blank" href="../view/id/1282.html">查看详情</a>
+                </div>
+            </div></div>
+</div>
+    <p class="text-muted text-center">----------------------我是有底线的----------------------</p>
+
+<script>
+    var ifAdding=false;
+    var page=2;
+    var ifCouldAdd=true;
+    window.onscroll=function(){
+        if(document.body.clientHeight-(window.pageYOffset + window.innerHeight)<=500)
+        {
+            if(ifAdding==false)
+            {
+                ifAdding=true;
+                addWatchface();
+            }
+        }
+    };
+    function addWatchface()
+    {
+        if(ifCouldAdd==false)
+            return;
+        var appendcode="";
+        $.get("https://www.iweloop.com/api/getNewestWatchface/page/"+ page,function(data){
+            if(data.isEnd==false)
+            {
+                data=data.watchface;
+                var count=0;
+                for(i in data) {
+                    if(count==0)
+                    {
+                        appendcode+='<div class="row watchface-row">';
+                    }
+                    var addon="";
+                    if(data[i].wf_type==2)
+                        addon='<div class="watchface-pay-icon"><span class="glyphicon glyphicon-yen label label-success">付费</span></div>';
+                    appendcode+="<div class='col-md-3'>\
+                    <div class='watchface'>\
+                    " + addon + "\
+                    <div class='watchface-img-bg center-block'>\
+                    <img class='watchface-img' src='https://www.iweloop.com/resource/watchface/img/" + data[i].picname + "' />\
+                    </div>\
+                    <div class='watchface-laud-like-row'>\
+                    <button class='btn btn-success btn-sm laud-button' data-wf-id='"+ data[i].wfid +  "' onclick='laudWatchface(this)'><span class='glyphicon glyphicon-thumbs-up'></span> " + data[i].laud + "</button>\
+                <button class='btn btn-success btn-sm like-button' data-wf-id='"+ data[i].wfid +  "' onclick='likeWatchface(this)'><span class='glyphicon glyphicon-heart'></span> " + data[i].like + "</button>\
+                </div>\
+                <p class='watchface-name'>名称:" + decodeURI(data[i].name) + "</p>\
+                <p class='watchface-maker'>作者:" + decodeURI(data[i].makername) + "</p>\
+                <a class='btn btn-primary btn-large btn-block' target='_blank' href='https://www.iweloop.com/watchface/view/id/" + data[i].wfid + "'>查看详情</a>\
+                </div>\
+                </div>";
+                    count++;
+                    if(count==4)
+                    {
+                        appendcode+='</div>';
+                        count=0;
+                    }
+
+                }
+                $('#watchface_list').append(appendcode);
+                page++;
+                ifAdding=false;
+            }
+            else
+            {
+                ifCouldAdd=false;
+                ifAdding=false;
+            }
+        });
+    }
+    function laudWatchface(curObj)
+    {
+        if($(curObj).data("isClicked")==true)
+            return;
+        $.post("../../api/laudWatchface.html","id=" + $(curObj).data("wf-id"),function(response){
+
+            if(response.status==1)
+            {
+                $(curObj).html('<span class="glyphicon glyphicon-thumbs-up"></span> ' + response.cur_laud);
+                $(curObj).attr("class","btn btn-info btn-sm");
+                $(curObj).data("isClicked",true);
+            }
+
+        });
+    }
+    function likeWatchface(curObj)
+    {
+        if($(curObj).data("isClicked")==true)
+            return;
+        $.post("../../api/likeWatchface.html","id=" + $(curObj).data("wf-id"),function(response){
+
+            if(response.status==1)
+            {
+                $(curObj).html('<span class="glyphicon glyphicon-heart"></span> ' + response.cur_like);
+                $(curObj).attr("class","btn btn-danger btn-sm");
+                $(curObj).data("isClicked",true);
+            }
+
+        });
+    }
+</script>
+<div id="footer">
+    <div class="container">
+        <p class="text-muted text-left"></p>
+            </div>
+</div>
+
+
+    <div class="visible-lg visible-md">
+        <div class="banner-left-div">
+            <img src="../../images/qrcode.jpg" class="center-block banner-left "/>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document"  style="width:500px; margin-top:10%;">
+            <div class="modal-content">
+
+                <div class="modal-body login-form">
+                    <div class="alert alert-info" role="alert" style="display: none;" id="login-alert">
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control login-field" value="" placeholder="用户名" id="login-username" />
+                        <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control login-field" value="" placeholder="密码" id="login-password" />
+                        <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+                    <label class="form-group">
+                        <input type="checkbox" value="remember-me" class="login-field" name="remember" id="login-remember" />记住我
+                    </label>
+                    <button class="btn btn-primary btn-lg btn-block" href="#" id="login-btn" onclick="submitLogin()">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document"  style="width:500px; margin-top:10%;">
+            <div class="modal-content">
+
+                <div class="modal-body login-form">
+                    <div class="alert alert-info" role="alert" style="display: none;" id="register-alert">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control login-field" value="" placeholder="用户名" id="register-username" />
+                        <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control login-field" value="" placeholder="密码" id="register-password" />
+                        <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control login-field" value="" placeholder="重复输入密码" id="register-repassword" />
+                        <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control login-field" value="" placeholder="邮箱地址" id="register-email" />
+                        <label class="login-field-icon fui-mail"></label>
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block" href="#" id="register-btn" onclick="submitRegister()">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+        $(".tagsinput").tagsinput();
+        $('.dropdown-toggle').dropdown();
+
+        $('#keyword').keydown(function(e){
+            if(e.keyCode==13){
+                goSearch($('#keyword').val());
+            }
+        });
+    });
+    function goSearch(keyword)
+    {
+        window.location="https://www.iweloop.com/watchface/search/keyword/" + encodeURIComponent(keyword);
+    }
+
+
+</script>
+</body>
+
+<!-- Mirrored from www.iweloop.com/watchface/newWatchface/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 10:55:54 GMT -->
+</html>
