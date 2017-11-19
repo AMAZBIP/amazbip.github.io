@@ -90,11 +90,22 @@
 				  </div>
                 <label class="form-label label label-warning">Commonly used tags: Digital, Russian</label>
             </div>
-
+		
+		
+<div class="form-inline watchface-upload">
+                <div class="input-group">
+                    <span class="input-group-addon">Название набора</span>
+                    <input type="text" class="form-control" placeholder="" id="watchface_name" oninput="$('#watchface_name_view').text($('#watchface_name').val())">
+                </div>
+                <label class="form-label label label-info">Пожалуйста, быть понятным и лаконичным, чтобы заполнить, для того, чтобы осуществить поиск</label>
+            </div>
+		
             <div class="form-inline watchface-upload">
                 <button class="btn btn-primary btn-large btn-block" onclick="$('#watchface_pic').click();" ><span class="glyphicon glyphicon-upload"></span> Upload a picture (must pass)</button>
                 <label class="form-label label label-default">Please upload the preview image of the watchface.png 176X176 px</label>
             </div>
+		
+		
                      <div class="form-inline watchface-upload">
                 <button class="btn btn-primary btn-large btn-block" onclick="$('#watchface_file').click();"><span class="glyphicon glyphicon-upload"></span> Upload the file</button>
                 <label class="form-label label label-default" id="watchface-file-notice">Please upload the dial file .bin</label>
