@@ -1,34 +1,3 @@
-{"status":"ok","watchface":[
-  {"picname":"1.png",
-   "binid":"1",
-   "makername":"000",
-   "laud":"0",
-   "like":"0",
-   "name":"00",
-   "bin_type":"1"},
-  
-  {"picname":"2.png",
-   "binid":"2",
-   "makername":"000",
-   "laud":"0",
-   "like":"0",
-   "name":"00",
-   "bin_type":"2"}, 
-  
-  {"picname":"3.png",
-   "binid":"3",
-   "makername":"000",
-   "laud":"0",
-   "like":"0",
-   "name":"f",
-   "bin_type":"3"},
-  
-  {"picname":"4.png",
-   "binid":"4",
-   "makername":"000",
-   "laud":"0",
-   "like":"0",
-   "name":"00",
-   "bin_type":"4"}
+{"status":"ok","watchface":
 ]
 }
