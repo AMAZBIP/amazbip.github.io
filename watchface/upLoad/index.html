@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Amazfit Watch faces</title>
+    <title>Amazfit Watch Faces</title>
     <meta name="description" content="Amazfit Watch faces">
     <meta name="keywords" content="Amazfit Watch faces">
     <meta property="og:name" content="Amazfit Watch faces" />
@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="http://amazfitwatchfaces.com/css/bootstrap.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="http://amazfitwatchfaces.com/css/jquery.smartbanner.css" type="text/css" media="screen">
-    <link href="/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="http://amazfitwatchfaces.com/css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body style='background:#121314;color: rgba(255, 255, 255, 0.8);'>
  <nav class="navbar navbar-inverse navbar-static-top">
@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.html"><img src='http://amazfitwatchfaces.com/images/logo.png' style='width:200px;margin-top:10px'></a>
+          <a href="http://amazfitwatchfaces.com/index.html"><img src='http://amazfitwatchfaces.com/images/logo.png' style='width:200px;margin-top:10px'></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -49,9 +49,11 @@
                 <a href='https://itunes.apple.com/ru/app/mi-fit/id938688461?mt=8' style='display:inline' target='_blank'><img alt='Get it on Google Play' src='http://amazfitwatchfaces.com/images/get_ios.png' width='170px' /></a>
               </div>
             </li>
-            <li><a href="https://www.facebook.com/groups/1935986946664086" target="_blank">Facebook</a></li>
+<li><a href="http://amazfitwatchfaces.com/watchface/newWatchface/index.html" target="_blank">NEW Watchface</a></li>
+<li><a href="http://amazfitwatchfaces.com/watchface/upLoad/index.html" target="_blank">UpLoad</a></li>
+<li><a href="https://www.facebook.com/groups/1935986946664086" target="_blank">Facebook</a></li>
 <li><a href="http://amazfit-bip.mcdir.ru/" target="_blank">.RES maker</a></li>
-            <li><a href="https://github.com/amazfitbip/tools" target="_blank">Github</a></li>
+<li><a href="https://github.com/amazfitbip/tools" target="_blank">Github</a></li>
     </nav>
 	<br><!-- /navbar -->
 <div class="container">
@@ -61,8 +63,8 @@
                 <div class="watchface-img-bg center-block">
                     <img class="watchface-img" id="watchface-preview" src="http://amazfitwatchfaces.com/images/black.png" />
                 </div>
-                <p class="watchface-name">Name:<span id="watchface_name_view"></span></p>
-                <p class="watchface-maker">Author:<span id="watchface_makername_view"></span></p>
+                <p class="watchface-name">Name: <span id="watchface_name_view"></span></p>
+                <p class="watchface-maker">Author: <span id="watchface_makername_view"></span></p>
             </div>
         </div>
         <div class="col-md-8">
@@ -72,34 +74,26 @@
                     <span class="input-group-addon">Watch Face name</span>
                     <input type="text" class="form-control" placeholder="" id="watchface_name" oninput="$('#watchface_name_view').text($('#watchface_name').val())" />
                 </div>
-                <label class="form-label label label-info">Please fill concisely</label>
+                <label class="form-label label label-default">Please fill concisely</label>
             </div>
             <div class="form-inline watchface-upload">
                 <div class="input-group">
                     <span class="input-group-addon">Author's name</span>
                     <input type="text" class="form-control" placeholder="" id="watchface_makername" oninput="$('#watchface_makername_view').text($('#watchface_makername').val())" />
                 </div>
-                <label class="form-label label label-info">It is important that you specify the name of the designer of this Watch Face</label>
-            </div>
-            <div class="form-inline">
-                <div class="input-group" >
-                    <span class="input-group-addon">Tag</span>
-					<input name="tagsinput" type="text" class="form-control" data-role="tagsinput" id="watch-face-tags" value="Bip" />
-            
-				  </div>
-                <label class="form-label label label-warning">Commonly used tags: Digital, Russian</label>
+                <label class="form-label label label-default">Designer of this Watch Face</label>
             </div>
 
             <div class="form-inline watchface-upload">
                 <button class="btn btn-primary btn-large btn-block" onclick="$('#watchface_pic').click();" ><span class="glyphicon glyphicon-upload"></span> Upload a picture (must pass)</button>
-                <label class="form-label label label-default">Please upload the preview image of the watchface.png 176X176 px</label>
+                <label class="form-label label label-default">Please upload watchface.png 176X176 px</label>
             </div>
                      <div class="form-inline watchface-upload">
                 <button class="btn btn-primary btn-large btn-block" onclick="$('#watchface_file').click();"><span class="glyphicon glyphicon-upload"></span> Upload the file</button>
                 <label class="form-label label label-default" id="watchface-file-notice">Please upload the dial file .bin</label>
             </div>
             <div class="watchface-upload">
-                <label class="form-label label label-info">Dial Description</label>
+                <label class="form-label label label-default">Dial Description</label>
                 <textarea class="form-control" rows="8" id="bin_describe" placeholder="Here you can enter the dial introduction, author contact information, sources and so on"></textarea>
             </div>
             <div class="watchface-upload">
@@ -192,8 +186,8 @@
         queryTokenizer: Bloodhound.tokenizers.whitespace,
         limit: 4,
         local: [
-            { word: "动态" },
-            { word: "指针" }
+            { word: "dynamic" },
+            { word: "pointer" }
         ]
     });
 
@@ -210,82 +204,8 @@
 </script>
 <div id="footer">
     <div class="container">
-        <p class="text-muted text-left"></p>
+        <p class="text-muted text-left">© 2017 Amazfit Watch Faces - All rights reserved.: NIKOLAY OSMACHKO</p>
             </div>
-</div>
 
-
-    <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document"  style="width:500px; margin-top:10%;">
-            <div class="modal-content">
-
-                <div class="modal-body login-form">
-                    <div class="alert alert-info" role="alert" style="display: none;" id="login-alert">
-
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control login-field" value="" placeholder="用户名" id="login-username" />
-                        <label class="login-field-icon fui-user" for="login-name"></label>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control login-field" value="" placeholder="密码" id="login-password" />
-                        <label class="login-field-icon fui-lock" for="login-pass"></label>
-                    </div>
-                    <label class="form-group">
-                        <input type="checkbox" value="remember-me" class="login-field" name="remember" id="login-remember" />记住我
-                    </label>
-                    <button class="btn btn-primary btn-lg btn-block" href="#" id="login-btn" onclick="submitLogin()">登录</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="register_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document"  style="width:500px; margin-top:10%;">
-            <div class="modal-content">
-
-                <div class="modal-body login-form">
-                    <div class="alert alert-info" role="alert" style="display: none;" id="register-alert">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control login-field" value="" placeholder="用户名" id="register-username" />
-                        <label class="login-field-icon fui-user" for="login-name"></label>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control login-field" value="" placeholder="密码" id="register-password" />
-                        <label class="login-field-icon fui-lock" for="login-pass"></label>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control login-field" value="" placeholder="重复输入密码" id="register-repassword" />
-                        <label class="login-field-icon fui-lock" for="login-pass"></label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control login-field" value="" placeholder="邮箱地址" id="register-email" />
-                        <label class="login-field-icon fui-mail"></label>
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block" href="#" id="register-btn" onclick="submitRegister()">注册</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-    $(function () {
-        $('[data-toggle="popover"]').popover();
-        $(".tagsinput").tagsinput();
-        $('.dropdown-toggle').dropdown();
-
-        $('#keyword').keydown(function(e){
-            if(e.keyCode==13){
-                goSearch($('#keyword').val());
-            }
-        });
-    });
-    function goSearch(keyword)
-    {
-        window.location="https://www.weloop.com/watchface/search/keyword/" + encodeURIComponent(keyword);
-    }
-
-
-</script>
 </body>
 </html>
