@@ -1,1 +1,8 @@
-{"status":"ok","watchface":[{"picname":"1.png","binid":"1","makername":"foreveryp","laud":"0","like":"0","name":"f","bin_type":"2"}]}
+{"status":"ok","watchface":[
+  {"picname":"1.png",
+   "binid":"1",
+   "makername":"foreveryp",
+   "laud":"0",
+   "like":"0",
+   "name":"f",
+   "bin_type":"2"}]}
