@@ -1,7 +1,7 @@
 {"status":"ok","watchface":[
   {"picname":"1.png",
    "binid":"1",
-   "Author":"000",
+   "makername":"000",
    "laud":"0",
    "like":"0",
    "name":"00",
@@ -9,7 +9,7 @@
   
   {"picname":"2.png",
    "binid":"2",
-   "Author":"000",
+   "makername":"000",
    "laud":"0",
    "like":"0",
    "name":"00",
@@ -17,7 +17,7 @@
   
   {"picname":"3.png",
    "binid":"3",
-   "Author":"000",
+   "makername":"000",
    "laud":"0",
    "like":"0",
    "name":"f",
@@ -25,7 +25,7 @@
   
   {"picname":"4.png",
    "binid":"4",
-   "Author":"000",
+   "makername":"000",
    "laud":"0",
    "like":"0",
    "name":"00",
