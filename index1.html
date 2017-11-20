@@ -76,15 +76,12 @@
 </div>
 <center><a class="btn btn-primary btn-lg" href="https://www.liqpay.ua/ru/checkout/amazfitwatchfaces" target='_blank' role="button" style='margin-top:30px'>Donate</a></center>
 	<div class="container">
-         <h3 style='margin-top:50px'>WATCH FACE</h3>
+        <h3 style='margin-top:50px'>WATCH FACE</h3>
         <h5 style='margin-bottom:10px'>New</h5>
 	</div>
-		<br>
+	<br>
 <div class="container" id="watchface_list">
-<div class="row watchface-row"> 
-	    <div class="col-md-3">
-	  </div>
-	    </div></div>
+</div>
 <script>
     var ifAdding=false;
     window.onscroll=function(){
@@ -109,7 +106,7 @@
                     appendcode+='<div class="row watchface-row">';
                 }
                 var addon="";
-                if(data[i].wf_type==2)
+                if(data[i].bin_type==2)
                     addon='<div class="watchface-pay-icon"><span class="glyphicon glyphicon-yen label label-success">bay</span></div>';
                 appendcode+="<div class='col-md-3'>\
                     <div class='watchface'>\
