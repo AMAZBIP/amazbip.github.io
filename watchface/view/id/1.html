@@ -21,12 +21,11 @@
     <script src="http://amazfitwatchfaces.com/js/flat-ui.min.js"></script>
     <script src="http://amazfitwatchfaces.com/js/typeahead.bundle.min.js"></script>
     <link rel="stylesheet" href="http://amazfitwatchfaces.com/css/style83c0.css?1503850524">
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="http://amazfitwatchfaces.com/css/bootstrap.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="http://amazfitwatchfaces.com/css/jquery.smartbanner.css" type="text/css" media="screen">
     <link href="/css/styles.css" type="text/css" rel="stylesheet">
-	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter46678461 = new Ya.Metrika({ id:46678461, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/46678461" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
    </head>
 <body style='background:#121314;color: rgba(255, 255, 255, 0.8);'>
@@ -98,9 +97,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
         <div class="col-lg-8">
                 <h4 class="describe-header">表盘描述：</h4>
@@ -112,87 +108,26 @@
             <div class="describe-pic">
                 <img class='img-responsive' src='../../../../weloop50.weloop.cn/forum/201701/16/160845kc2snnebbmyc2ddb.png' />            </div>
             <p>由于多说关闭，现启用自制评论系统，以往评论正在导入中</p>
-            <div class="encuss-div" data-post-id="12"  data-title="林家大少爷-3号" data-url="https://www.iweloop.com/watchface/view/id/12" data-image="../../../resource/watchface/img/12995937561488696967.gif">
-            </div>
-            <script type="text/javascript">
-                var encussConfig = {
-                    short_name:"iweloop",
-                    site_id:2,
-                    is_nest:true,
-                    sso: {
-                        login: "https://www.iweloop.com/user/loginFromEncuss/viewing/https%3A%2F%2Fwww.iweloop.com%2F%2Fwatchface%2Fview%2Fid%2F12/",
-                        logout: "https://www.iweloop.com/user/logoutFromEncuss/viewing/https%3A%2F%2Fwww.iweloop.com%2F%2Fwatchface%2Fview%2Fid%2F12/"
-                    }
-                };
-                (function() {
-                    var encuss = document.createElement('script');
-                    encuss.type = 'text/javascript';
-                    encuss.async = true;
-                    encuss.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//encuss.yxz.me/js/embed.js?1.21';
-                    encuss.charset = 'UTF-8';
-                    (document.getElementsByTagName('head')[0]
-                    || document.getElementsByTagName('body')[0]).appendChild(encuss);
-                })();
-                function laudWatchface(curObj)
-                {
-                    if($(curObj).data("isClicked")==true)
-                        return;
-                    $.post("../../../api/laudWatchface.html","id=" + $(curObj).data("wf-id"),function(response){
+            <div id="disqus_thread"></div>
+<script>
 
-                        if(response.status==1)
-                        {
-                            $(curObj).html('<span class="glyphicon glyphicon-thumbs-up"></span> 点赞 ' + response.cur_laud);
-                            $(curObj).attr("class","btn btn-info btn-sm");
-                            $(curObj).data("isClicked",true);
-                        }
-
-                    });
-                }
-                function likeWatchface(curObj)
-                {
-                    if($(curObj).data("isClicked")==true)
-                        return;
-                    $.post("../../../api/likeWatchface.html","id=" + $(curObj).data("wf-id"),function(response){
-
-                        if(response.status==1)
-                        {
-                            $(curObj).html('<span class="glyphicon glyphicon-heart"></span> 收藏 ' + response.cur_like);
-                            $(curObj).attr("class","btn btn-danger btn-sm");
-                            $(curObj).data("isClicked",true);
-                        }
-
-                    });
-                }
-                function generateImg(imgname)
-                {
-                    return "<img src='https://www.iweloop.com//resource/watchface/img/" +imgname+ "' class='watchface-version-item-preview' width=176 height=176></img>";
-                }
-                function voteWatchface(curObj)
-                {
-                    if($(curObj).data("isClicked")==true)
-                        return;
-                    $.post("../../../api/voteWatchface.html","id=" + $(curObj).data("wf-id"),function(response){
-
-                        if(response.status==1)
-                        {
-                            $(curObj).attr("class","btn btn-xs btn-inverse");
-                            $(curObj).text("已投票");
-                            $(curObj).parent().siblings(".vote-count").text(response.vote_count + " 票");
-                            $(curObj).data("isClicked",true);
-                        }
-
-                    });
-                }
-                $('.watchface-version-list-item').tooltip(
-                    {
-                        title: function(e){return generateImg($(this).data("imgname"));},
-                        placement: "right",
-                        template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner watchface-version-tooltip"></div></div>'
-                    }
-                );
-
-            </script>
-            <!-- 多说公共JS代码 end -->
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://http-amazfitwatchfaces-com-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
     </div>
     <p class="text-muted">如果该页面存在侵犯您权益的内容(包括需要将上传者改为您)，请发送邮件至yxzyxz001#vip.qq.com</p>
