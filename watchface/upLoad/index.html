@@ -24,9 +24,9 @@
     <link rel="stylesheet" href="http://amazfitwatchfaces.com/css/style83c0.css?1503850524">
 <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="http://amazfitwatchfaces.com/css/bootstrap.css" type="text/css" rel="stylesheet">
+
     <link rel="stylesheet" href="http://amazfitwatchfaces.com/css/jquery.smartbanner.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="http://amazfitwatchfaces.com/css/styles.css" type="text/css" rel="stylesheet">
+  
 </head>
 <body style='background:#121314;color: rgba(255, 255, 255, 0.8);'>
  <nav class="navbar navbar-inverse navbar-static-top">
@@ -144,7 +144,7 @@
         formData.append("pic-2",$('#pic-2').val());
         formData.append("pic-3",$('#pic-3').val());
         $.ajax({
-            url :  "https://amazfitwatchfaces.com/api/uploadWatchface",
+            url :  "http://amazfitwatchfaces.com/api/uploadWatchface",
             type : 'POST',
             data : formData,
             processData : false,
@@ -156,14 +156,14 @@
                     $('#result_display').show();
                     setTimeout(function(){window.location="http://amazfitwatchfaces.com/watchface/view/id/" + responseStr.bin_id;},2000);
                 }else{
-                    $('#result_display').html("<p>Failed to upload：" + decodeURIComponent(responseStr.message).replace("BLANK"," ") + "</p>");
+                    $('#result_display').html("<p>Failed to upload：2" + decodeURIComponent(responseStr.message).replace("BLANK"," ") + "</p>");
                     $('#result_display').attr("class","alert alert-danger");
                     $('#result_display').show();
                 }
                 $('#upload_button').attr("disabled",false) ;
             },
             error : function() {
-                $('#result_display').html("<p>Failed to upload</p>");
+                $('#result_display').html("<p>Failed to upload1</p>");
                 $('#result_display').attr("class","alert alert-danger");
                 $('#result_display').show();
                 $('#upload_button').attr("disabled",false) ;
